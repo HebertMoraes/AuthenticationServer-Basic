@@ -1,0 +1,19 @@
+{
+    "allUsers": [
+        {
+            "id": 1,
+            "name": "Samanta", 
+            "email": "emailtesteadmin@gmail.com",
+            "password": "1234", 
+            "role": "admin"
+        }, 
+        {
+            "id": 1,
+            "name": "Jefferson", 
+            "email": "emailtesteuser@gmail.com",
+            "password": "1234", 
+            "role": "user"
+        }
+    ]
+}
+

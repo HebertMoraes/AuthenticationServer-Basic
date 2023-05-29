@@ -5,4 +5,6 @@ const routes = express.Router();
 
 routes.post('/login', controllerUser.Login);
 
+routes.post('/refresh-token', controllerUser.RefreshAcessToken);
+
 module.exports = routes;
