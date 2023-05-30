@@ -8,8 +8,8 @@ module.exports =
         if (module.exports.searchUser(req.body.email, req.body.password)) {
 
             const acess_token = jwt.sign({}, "exemploDeSecretJWT", {
-                // expiresIn: 150 // expires in 2,5 min
-                expiresIn: 10 // expires in 2,5 min
+                expiresIn: 150 // expires in 2,5 min
+                // expiresIn: 80
             });
 
             const refresh_token = jwt.sign({}, "exemploDeSecretJWT", {
@@ -35,8 +35,8 @@ module.exports =
             jwt.verify(req.body.refresh_token, "exemploDeSecretJWT");
 
             const acess_token = jwt.sign({}, "exemploDeSecretJWT", {
-                // expiresIn: 150 // expires in 2,5 min
-                expiresIn: 10 // expires in 2,5 min
+                expiresIn: 150 // expires in 2,5 min
+                // expiresIn: 80
             });
             return res.json(
                 {
